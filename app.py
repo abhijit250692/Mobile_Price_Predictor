@@ -22,10 +22,10 @@ def main():
 		st.header("Enter Mobile Specifications")
 		col1, col2 = st.columns(2)
 		with col1:
-			weight = st.number_input("Weight (g)", min_value=50.0, max_value=1000.0, value=100.0, step=25.0)
+			weight = st.number_input("Weight (g)", min_value=50, max_value=1000, value=100, step=25)
 			resolution = st.number_input("Resolution (inches)", min_value=1.0, max_value=15.0, value=5.0, step=0.1)
 			ppi = st.number_input("PPI", min_value=100.0, max_value=1000.0, value=300.0, step=50.0)
-			cpu_core = st.selectbox("CPU Cores", [1.0, 2.0, 4.0, 6.0, 8.0], index=2)
+			cpu_core = st.selectbox("CPU Cores", [1, 2, 4, 6, 8], index=2)
 			cpu_freq = st.number_input("CPU Frequency (GHz)", min_value=0.2, max_value=3.0, value=1.0, step=0.1)
 			thickness = st.number_input("Thickness (mm)", min_value=5.0, max_value=20.0, value=9.0, step=0.5)
 		with col2:
